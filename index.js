@@ -7,6 +7,14 @@
     Events = Matter.Events,
     Composite = Matter.Composite;
 
+  let soundEnabled = true;
+  const soundToggle = document.getElementById("soundToggle");
+
+  soundToggle.addEventListener("click", () => {
+    soundEnabled = !soundEnabled;
+    soundToggle.textContent = soundEnabled ? "🔊 Sound ON" : "🔇 Sound OFF";
+  });
+
   const parent = document.getElementById("game");
   const canvas = document.getElementById("canvas");
   var gameOverlayer = document.getElementById("overlay");
@@ -235,8 +243,10 @@
 
           score += bodies[0].size;
 
-          var audio = new Audio("assets/pop.wav");
-          audio.play();
+          if (soundEnabled) {
+            var audio = new Audio("assets/pop.wav");
+            audio.play();
+          }
         }
       }
     });

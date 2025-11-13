@@ -33,17 +33,22 @@
     <div class="container">
       <div class="item"></div>
 
-<div class="item" id="game">
-  <div id="overlay">
-    <button id="playAgainButton" onclick="location.reload()">
-      Play Again
-    </button>
-  </div>
-  <canvas id="canvas"></canvas>
-  <div id="floor"></div>
-  <p>Made by ❤️ yangchi</p>
-</div>
-</div>
+      <div class="item" id="game">
+        <div id="overlay">
+          <button id="playAgainButton" onclick="location.reload()">
+            Play Again
+          </button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div id="floor"></div>
+        <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 10px;">
+          <p style="margin: 0;">Made by ❤️ yangchi</p>
+          <button id="soundToggle" style="padding: 8px 12px; cursor: pointer; background: #333; color: #fff; border: none; border-radius: 5px; font-size: 14px;">
+            🔊 Sound ON
+          </button>
+        </div>
+      </div>
+    </div>
 
     <script defer src="index.js"></script>
   </body>
