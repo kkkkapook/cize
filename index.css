@@ -60,10 +60,11 @@ button * {
 }
 
 #floor {
-  width: 480px;
+  width: 100%;
   background: #b37b50;
 
   border-radius: 0 0 25px 25px;
+  box-sizing: border-box;
 }
 
 #overlay {

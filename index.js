@@ -12,7 +12,7 @@
 
   soundToggle.addEventListener("click", () => {
     soundEnabled = !soundEnabled;
-    soundToggle.textContent = soundEnabled ? "🔊 Sound ON" : "🔇 Sound OFF";
+    soundToggle.textContent = soundEnabled ? "🔊 ON" : "🔇 OFF";
   });
 
   const parent = document.getElementById("game");
